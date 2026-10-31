@@ -3,7 +3,7 @@ export const site = {
   domain: "mdborn.com",
   artist: "Michael Bell",
   tagline: "Handmade flags and tables, given in thanks for gifts to veterans.",
-  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@mdborn.com",
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "bellmichaelp@pm.me",
 };
 
 export const categories = [
