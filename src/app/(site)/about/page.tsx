@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { Fragment } from "react";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = { title: "About the Artist" };
 
-const sections: { heading?: string; paragraphs: string[] }[] = [
+type Photo = { src: string; alt: string; width: number; height: number };
+
+// Photos in a section appear right after its first paragraph.
+const sections: { heading?: string; paragraphs: string[]; photos?: Photo[] }[] = [
   {
     paragraphs: [
       "I was born and raised in Maryland. My father was in the Navy in 1953 and my parents met at a dance at the Bainbridge Naval Training Center in Port Deposit. I've liked making things for as long as I can remember, from model rockets as a kid to woodworking in high school.",
@@ -38,6 +43,20 @@ const sections: { heading?: string; paragraphs: string[] }[] = [
   },
   {
     heading: "Where the flags hang today",
+    photos: [
+      {
+        src: "/about/michael-with-brian-mast.jpg",
+        alt: "Michael Bell and Congressman Brian Mast with a shotgun shell flag",
+        width: 1024,
+        height: 683,
+      },
+      {
+        src: "/about/flag-in-mast-office.jpg",
+        alt: "Shotgun shell flag hanging in Congressman Mast's office on Capitol Hill",
+        width: 1200,
+        height: 1600,
+      },
+    ],
     paragraphs: [
       "On my third mission in 2011, I had the honor of meeting Brian Mast, a double amputee EOD tech, now a Congressman and Chairman of the House Foreign Affairs Committee. One of these flags was presented to Chairman Mast in recognition of his sacrifice and continued service to our country, and it hangs in his office on Capitol Hill.",
       "A similar flag presented to General Bryan Fenton now hangs at the entrance of United States Special Operations Command at MacDill Air Force Base in Tampa, Florida. Over the years I've designed and donated dozens of flags like these to raise awareness and money for veterans' causes.",
@@ -57,12 +76,38 @@ export default function AboutPage() {
     <div className="mx-auto max-w-3xl px-5 py-16">
       <p className="eyebrow">About the Artist</p>
       <h1 className="mt-2 text-4xl text-navy">{site.artist}</h1>
+      <Image
+        src="/about/michael-socom-flag.jpg"
+        alt="Michael Bell with his shotgun shell flag bearing the Special Operations emblem at a Wounded Warriors Abilities Ranch event"
+        width={1600}
+        height={1200}
+        sizes="(min-width: 768px) 720px, 100vw"
+        className="mt-8 h-auto w-full rounded-lg"
+        priority
+      />
       <div className="mt-8 text-lg leading-relaxed text-ink/85">
         {sections.map((section, i) => (
           <section key={i} className={i === 0 ? "space-y-5" : "mt-12 space-y-5"}>
             {section.heading && <h2 className="text-2xl text-navy">{section.heading}</h2>}
             {section.paragraphs.map((p, j) => (
-              <p key={j}>{p}</p>
+              <Fragment key={j}>
+                <p>{p}</p>
+                {j === 0 && section.photos && (
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {section.photos.map((photo) => (
+                      <Image
+                        key={photo.src}
+                        src={photo.src}
+                        alt={photo.alt}
+                        width={photo.width}
+                        height={photo.height}
+                        sizes="(min-width: 768px) 360px, 100vw"
+                        className="h-72 w-full rounded-lg object-cover"
+                      />
+                    ))}
+                  </div>
+                )}
+              </Fragment>
             ))}
           </section>
         ))}
