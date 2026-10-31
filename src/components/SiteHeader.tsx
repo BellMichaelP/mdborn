@@ -9,6 +9,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/gallery", label: "Gallery" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/making-of/socom-flag", label: "Making Of" },
   { href: "/nonprofits", label: "Veterans Groups" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
