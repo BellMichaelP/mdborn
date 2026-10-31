@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#5b3a22"/><g transform="translate(60,90)"><rect width="680" height="420" fill="#2b1d12"/>
+<g fill="#b22234">
+<rect y="0" width="680" height="32"/><rect y="64" width="680" height="32"/><rect y="128" width="680" height="32"/><rect y="194" width="680" height="32"/><rect y="258" width="680" height="32"/><rect y="322" width="680" height="32"/><rect y="388" width="680" height="32"/></g>
+<g fill="#efe6d2"><rect y="32" width="680" height="32"/><rect y="96" width="680" height="32"/><rect y="160" width="680" height="34"/><rect y="226" width="680" height="32"/><rect y="290" width="680" height="32"/><rect y="354" width="680" height="34"/></g>
+<rect width="290" height="226" fill="#1b2a41"/>
+<g fill="#c9a46a">
+<circle cx="30" cy="25" r="9"/><circle cx="80" cy="25" r="9"/><circle cx="130" cy="25" r="9"/><circle cx="180" cy="25" r="9"/><circle cx="230" cy="25" r="9"/>
+<circle cx="55" cy="70" r="9"/><circle cx="105" cy="70" r="9"/><circle cx="155" cy="70" r="9"/><circle cx="205" cy="70" r="9"/><circle cx="255" cy="70" r="9"/>
+<circle cx="30" cy="115" r="9"/><circle cx="80" cy="115" r="9"/><circle cx="130" cy="115" r="9"/><circle cx="180" cy="115" r="9"/><circle cx="230" cy="115" r="9"/>
+<circle cx="55" cy="160" r="9"/><circle cx="105" cy="160" r="9"/><circle cx="155" cy="160" r="9"/><circle cx="205" cy="160" r="9"/><circle cx="255" cy="160" r="9"/>
+<circle cx="30" cy="205" r="9"/><circle cx="80" cy="205" r="9"/><circle cx="130" cy="205" r="9"/><circle cx="180" cy="205" r="9"/><circle cx="230" cy="205" r="9"/></g>
+<g stroke="#000" stroke-opacity=".18" stroke-width="2">
+<path d="M290 0V420M330 0V420M370 0V420M410 0V420M450 0V420M490 0V420M530 0V420M570 0V420M610 0V420M650 0V420M40 226V420M80 226V420M120 226V420M160 226V420M200 226V420M240 226V420"/></g></g>
+<text x="400" y="560" text-anchor="middle" font-family="Georgia" font-size="22" fill="#efe6d2" opacity=".7">Sample image</text></svg>

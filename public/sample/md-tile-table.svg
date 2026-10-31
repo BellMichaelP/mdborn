@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#e9e1d1"/>
+<rect x="110" y="70" width="580" height="420" rx="10" fill="#6b4426"/>
+<g transform="translate(140,100)">
+<defs><pattern id="ck" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="#e8b91f"/><path d="M0 0H30V60H0Z M30 0L60 60" fill="#111"/></pattern>
+<pattern id="cr" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="#f4f1ea"/><rect x="24" width="12" height="60" fill="#c0272d"/><rect y="24" width="60" height="12" fill="#c0272d"/></pattern></defs>
+<rect width="260" height="180" fill="url(#ck)"/><rect x="260" width="260" height="180" fill="url(#cr)"/>
+<rect y="180" width="260" height="180" fill="url(#cr)"/><rect x="260" y="180" width="260" height="180" fill="url(#ck)"/>
+<g stroke="#d9d2c4" stroke-width="3"><path d="M0 60H520M0 120H520M0 180H520M0 240H520M0 300H520M65 0V360M130 0V360M195 0V360M260 0V360M325 0V360M390 0V360M455 0V360"/></g></g>
+<text x="400" y="560" text-anchor="middle" font-family="Georgia" font-size="22" fill="#6b4426" opacity=".7">Sample image</text></svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#d8d2c6"/>
+<rect x="110" y="70" width="580" height="420" rx="10" fill="#3e2a1a"/>
+<g transform="translate(140,100)">
+<g fill="#b22234"><rect width="520" height="28"/><rect y="56" width="520" height="28"/><rect y="112" width="520" height="28"/><rect y="168" width="520" height="28"/><rect y="224" width="520" height="28"/><rect y="280" width="520" height="28"/><rect y="336" width="520" height="24"/></g>
+<g fill="#f6f1e7"><rect y="28" width="520" height="28"/><rect y="84" width="520" height="28"/><rect y="140" width="520" height="28"/><rect y="196" width="520" height="28"/><rect y="252" width="520" height="28"/><rect y="308" width="520" height="28"/></g>
+<rect width="220" height="196" fill="#1b2a41"/>
+<g fill="#f6f1e7" font-size="26" font-family="Arial" text-anchor="middle">
+<text x="30" y="40">★</text><text x="80" y="40">★</text><text x="130" y="40">★</text><text x="180" y="40">★</text>
+<text x="55" y="85">★</text><text x="105" y="85">★</text><text x="155" y="85">★</text>
+<text x="30" y="130">★</text><text x="80" y="130">★</text><text x="130" y="130">★</text><text x="180" y="130">★</text>
+<text x="55" y="175">★</text><text x="105" y="175">★</text><text x="155" y="175">★</text></g>
+<g stroke="#bdb6a8" stroke-width="2"><path d="M0 70H520M0 140H520M0 210H520M0 280H520M65 0V360M130 0V360M195 0V360M260 0V360M325 0V360M390 0V360M455 0V360"/></g></g>
+<text x="400" y="560" text-anchor="middle" font-family="Georgia" font-size="22" fill="#3e2a1a" opacity=".7">Sample image</text></svg>

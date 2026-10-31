@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# mdborn.com
 
-## Getting Started
+Michael Bell's flag art site. Shotgun shell flags and tile flag tables are given, never sold, in thanks for a donation to one of four veterans groups.
 
-First, run the development server:
+Next.js on Vercel, with Supabase for the admin login, the list of pieces, and photo storage.
 
-```bash
+## Pages
+
+- `/` home, `/gallery`, `/gallery/[slug]`, `/how-it-works`, `/nonprofits`, `/about`, `/contact`
+- `/admin` add, edit, and delete pieces and upload photos (sign-in required)
+
+Site-wide text, the veterans groups, categories, and statuses live in `src/lib/site.ts`.
+
+## Setup
+
+1. Create a Supabase project and run `supabase/schema.sql` in its SQL editor.
+2. In Supabase, turn off public sign-ups, then add the admin user by hand under Authentication > Users.
+3. In Vercel, set the variables listed in `.env.example`. Keep keys out of the repo and out of chat.
+
+Until Supabase is connected, the site shows three sample pieces so the layout can be previewed.
+
+## Local development
+
+```sh
+npm install
+cp .env.example .env.local   # fill in values
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
