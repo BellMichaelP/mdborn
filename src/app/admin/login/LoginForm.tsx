@@ -18,7 +18,8 @@ export default function LoginForm() {
     const { error } = await createBrowserSupabase().auth.signInWithPassword({ email, password });
     setBusy(false);
     if (error) {
-      setError("That email and password didn't work. Please try again.");
+      // Show Supabase's reason too, so a setup problem can be told apart from a typo.
+      setError(`That didn't work (${error.message}). Please try again.`);
       return;
     }
     router.replace("/admin");
