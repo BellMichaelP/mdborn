@@ -47,7 +47,7 @@ export const nonprofits = [
     name: "The Ranch Ministries",
     blurb:
       "A South Dakota ranch that shares faith and hope with veterans through retreats and hands-on ranch life.",
-    url: "https://www.theranchministries.org",
+    url: "https://www.theranchministries.com",
   },
   {
     name: "Veterans Airlift Command",
