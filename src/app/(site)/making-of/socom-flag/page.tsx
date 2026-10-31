@@ -121,8 +121,8 @@ const steps = [
     file: "16-img_2247.jpg",
     w: 1600,
     h: 1200,
-    title: "At the Wounded Warriors Abilities Ranch event",
-    caption: "The finished flag on display at a Wounded Warriors Abilities Ranch event.",
+    title: "At the WWAR Annual Gala",
+    caption: "Michael with the finished flag at the Wounded Warriors Abilities Ranch Annual Gala.",
   },
 ];
 
@@ -134,8 +134,8 @@ export default function SocomFlagMakingOfPage() {
       <p className="eyebrow">The Making Of</p>
       <h1 className="mt-2 text-4xl md:text-5xl text-navy">The 3D SOCOM Flag</h1>
       <p className="mt-5 text-lg text-ink/80 max-w-3xl">
-        This shotgun shell flag waves. It carries the seal of U.S. Special Operations Command in the blue field. Here
-        is how it came together, one step at a time.
+        This flag is made from 1,092 shotgun shells, and it waves. It carries the seal of U.S. Special Operations
+        Command in the blue field. Here is how it came together, one step at a time.
       </p>
 
       <div className="mt-10 overflow-hidden rounded-lg shadow">
@@ -175,6 +175,14 @@ export default function SocomFlagMakingOfPage() {
           </li>
         ))}
       </ol>
+
+      <section className="mt-16 rounded-lg bg-navy text-white p-8">
+        <h2 className="text-3xl">Where it is now</h2>
+        <p className="mt-4 text-lg text-white/85 max-w-3xl">
+          The flag was presented to General Bryan Fenton, commander of U.S. Special Operations Command. It hangs at
+          the entrance to SOCOM headquarters at MacDill Air Force Base in Tampa, Florida.
+        </p>
+      </section>
 
       <div className="mt-16 flex flex-wrap gap-4">
         <Link href="/gallery" className="btn btn-red">See the Gallery</Link>
