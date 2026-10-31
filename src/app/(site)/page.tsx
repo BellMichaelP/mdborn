@@ -30,17 +30,17 @@ export default async function HomePage() {
           {/* Sponsor corner: Federal Top Gun Patriot box and Federal logo */}
           <div className="mb-10 flex w-40 flex-col items-center rounded bg-white p-3 text-center shadow-lg lg:absolute lg:right-5 lg:top-8 lg:mb-0 lg:w-52">
             <Image
-              src="/brand/federal-logo.png"
+              src="/brand/federal-logo.jpg"
               alt="Federal Ammunition"
-              width={400}
-              height={120}
+              width={332}
+              height={54}
               className="h-auto w-full"
             />
             <Image
               src="/brand/federal-top-gun-patriot-box.jpg"
               alt="Box of Federal Top Gun red, white, and blue Patriot shotgun shells"
-              width={400}
-              height={400}
+              width={1024}
+              height={600}
               className="mt-2 h-auto w-full"
             />
             <p className="mt-2 text-[0.7rem] font-semibold uppercase tracking-wider text-navy">
