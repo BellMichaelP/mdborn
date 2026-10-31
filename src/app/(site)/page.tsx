@@ -27,6 +27,26 @@ export default async function HomePage() {
         )}
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
         <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-36">
+          {/* Sponsor corner: Federal Top Gun Patriot box and Federal logo */}
+          <div className="mb-10 flex w-40 flex-col items-center rounded bg-white p-3 text-center shadow-lg lg:absolute lg:right-5 lg:top-8 lg:mb-0 lg:w-52">
+            <Image
+              src="/brand/federal-logo.jpg"
+              alt="Federal Ammunition"
+              width={332}
+              height={54}
+              className="h-auto w-full"
+            />
+            <Image
+              src="/brand/federal-top-gun-patriot-box.jpg"
+              alt="Box of Federal Top Gun red, white, and blue Patriot shotgun shells"
+              width={1024}
+              height={600}
+              className="mt-2 h-auto w-full"
+            />
+            <p className="mt-2 text-[0.7rem] font-semibold uppercase tracking-wider text-navy">
+              Built with Federal Top Gun Patriot shells
+            </p>
+          </div>
           <p className="eyebrow">Handmade in Maryland</p>
           <h1 className="mt-4 text-4xl md:text-6xl leading-tight max-w-3xl">
             Flag art made by hand, given in thanks to those who give to veterans.
